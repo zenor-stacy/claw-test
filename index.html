@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>探索台灣 — 旅遊一頁式 Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>探索台灣</h1>
+      <p>精選行程・在地體驗・專屬優惠 — 馬上出發，發現不一樣的台灣。</p>
+      <a class="cta" href="#booking">立即預訂</a>
+    </div>
+  </header>
+
+  <section id="features" class="container">
+    <h2>為什麼選我們</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>在地精選</h3>
+        <p>與當地導遊合作，深入體驗文化與美食。</p>
+      </div>
+      <div class="card">
+        <h3>彈性行程</h3>
+        <p>客製化選項，適合家庭、情侶與背包客。</p>
+      </div>
+      <div class="card">
+        <h3>安心保障</h3>
+        <p>24/7 客服與行程保險選項。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="container booking">
+    <h2>預訂專區</h2>
+    <form class="form" action="#" onsubmit="alert('感謝預訂！我們會儘快與您聯絡。'); return false;">
+      <input type="text" placeholder="姓名" required />
+      <input type="email" placeholder="電子郵件" required />
+      <select required>
+        <option value="">選擇行程</option>
+        <option>台北文化一日遊</option>
+        <option>東部海岸三日遊</option>
+        <option>南投山林療癒之旅</option>
+      </select>
+      <button class="cta" type="submit">送出預訂</button>
+    </form>
+  </section>
+
+  <footer class="container">
+    <p>© 2026 探索台灣。保留所有權利。</p>
+  </footer>
+</body>
+</html>
