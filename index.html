@@ -4,52 +4,74 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>探索台灣 — 旅遊一頁式 Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="hero">
-    <div class="container">
+    <div class="overlay"></div>
+    <div class="container hero-content">
       <h1>探索台灣</h1>
-      <p>精選行程・在地體驗・專屬優惠 — 馬上出發，發現不一樣的台灣。</p>
-      <a class="cta" href="#booking">立即預訂</a>
+      <p class="lead">精選行程・在地體驗・專屬優惠 — 馬上出發，發現不一樣的台灣。</p>
+      <div class="hero-actions">
+        <a class="cta primary" href="#booking">立即預訂</a>
+        <a class="cta ghost" href="#features">了解更多</a>
+      </div>
     </div>
   </header>
 
-  <section id="features" class="container">
-    <h2>為什麼選我們</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>在地精選</h3>
-        <p>與當地導遊合作，深入體驗文化與美食。</p>
+  <main>
+    <section id="features" class="container features">
+      <h2>為什麼選我們</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1502784444185-59f6b5e0d0de?q=80&w=800&auto=format&fit=crop" alt="在地精選"/>
+          <h3>在地精選</h3>
+          <p>與當地導遊合作，深入體驗文化與美食。</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1502920514313-52581002a659?q=80&w=800&auto=format&fit=crop" alt="彈性行程"/>
+          <h3>彈性行程</h3>
+          <p>客製化選項，適合家庭、情侶與背包客。</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=800&auto=format&fit=crop" alt="安心保障"/>
+          <h3>安心保障</h3>
+          <p>24/7 客服與行程保險選項。</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>彈性行程</h3>
-        <p>客製化選項，適合家庭、情侶與背包客。</p>
-      </div>
-      <div class="card">
-        <h3>安心保障</h3>
-        <p>24/7 客服與行程保險選項。</p>
+    </section>
+
+    <section id="booking" class="container booking">
+      <h2>預訂專區</h2>
+      <form class="form" action="#" onsubmit="alert('感謝預訂！我們會儘快與您聯絡。'); return false;">
+        <div class="row">
+          <input type="text" placeholder="姓名" required />
+          <input type="email" placeholder="電子郵件" required />
+        </div>
+        <select required>
+          <option value="">選擇行程</option>
+          <option>台北文化一日遊</option>
+          <option>東部海岸三日遊</option>
+          <option>南投山林療癒之旅</option>
+        </select>
+        <textarea placeholder="備註或特殊需求（選填）" rows="4"></textarea>
+        <button class="cta primary" type="submit">送出預訂</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div class="footer-inner">
+      <p>© 2026 探索台灣。保留所有權利。</p>
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">Facebook</a>
       </div>
     </div>
-  </section>
-
-  <section id="booking" class="container booking">
-    <h2>預訂專區</h2>
-    <form class="form" action="#" onsubmit="alert('感謝預訂！我們會儘快與您聯絡。'); return false;">
-      <input type="text" placeholder="姓名" required />
-      <input type="email" placeholder="電子郵件" required />
-      <select required>
-        <option value="">選擇行程</option>
-        <option>台北文化一日遊</option>
-        <option>東部海岸三日遊</option>
-        <option>南投山林療癒之旅</option>
-      </select>
-      <button class="cta" type="submit">送出預訂</button>
-    </form>
-  </section>
-
-  <footer class="container">
-    <p>© 2026 探索台灣。保留所有權利。</p>
   </footer>
 </body>
 </html>
